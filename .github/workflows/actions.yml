@@ -1,4 +1,4 @@
-name: py_scripts
+name: textnowProtect
 
 on:
   push:
@@ -6,9 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    # 时间是按UTC设置的，实际执行时间，则自动按东八区执行
-    # 即+8小时，故实际执行时间为：8点，20点
-    - cron: 0 0,12 * * *
+    - cron: 57 21 * * *
 
 jobs:
   build:
@@ -52,7 +50,6 @@ jobs:
     #    pytest nothing.py
     
    
-    # TextNow保号任务
     - name: textnow protect number
       env:
         TEXTNOW_USERNAME: ${{ secrets.TEXTNOW_USERNAME }}
