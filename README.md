@@ -5,7 +5,7 @@
 Modified based on [Arronlong / py_scripts](https://github.com/Arronlong/py_scripts), removed all other scripts, only textnow_protect_number is reserved.
 
 
-
+# 在settings--secrets中添加变量
 添加名为TEXTNOW_USERNAME、TEXTNOW_PASSWORD、TEXTNOW_NUMBER、TEXTNOW_MSG的变量
 值分别为账号、密码、接收方号码、短信内容
 支持多账号，多接收方号码，之间用半角逗号分隔，账号于密码的个数要对应
